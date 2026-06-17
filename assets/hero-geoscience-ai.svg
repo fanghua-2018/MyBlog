@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="人工智能与地学智能应用主题图">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#dff3fb"/>
+      <stop offset="0.5" stop-color="#f7fbfc"/>
+      <stop offset="1" stop-color="#0f3844"/>
+    </linearGradient>
+    <linearGradient id="earth" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#7b6d57"/>
+      <stop offset="0.45" stop-color="#c18b3b"/>
+      <stop offset="1" stop-color="#174f59"/>
+    </linearGradient>
+    <linearGradient id="map" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#2f8b89" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#0f2f45" stop-opacity=".92"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <circle cx="138" cy="112" r="170" fill="#ffffff" opacity=".55"/>
+  <path d="M0 472 L118 358 L223 433 L361 252 L522 438 L664 316 L810 472 Z" fill="#8fa2ad"/>
+  <path d="M170 432 L361 252 L522 438 L450 421 L361 315 L282 448 Z" fill="#eef5f7" opacity=".86"/>
+  <path d="M630 428 C806 272 1086 166 1600 132 L1600 900 L630 900 Z" fill="url(#map)" opacity=".85"/>
+  <g opacity=".42" stroke="#cce9ef" stroke-width="1">
+    <path d="M754 386 C904 328 1082 292 1600 226"/>
+    <path d="M716 466 C952 408 1124 380 1600 322"/>
+    <path d="M682 558 C962 508 1184 476 1600 438"/>
+    <path d="M834 288 L1030 690"/>
+    <path d="M994 246 L1230 724"/>
+    <path d="M1186 206 L1454 808"/>
+    <path d="M1366 178 L1600 612"/>
+  </g>
+  <path d="M0 628 C186 548 320 603 505 535 C690 467 804 541 1002 492 C1190 446 1350 475 1600 410 L1600 900 L0 900 Z" fill="#173946" opacity=".92"/>
+  <path d="M0 655 C178 598 330 648 512 583 C716 510 875 612 1060 546 C1260 476 1397 548 1600 486" fill="none" stroke="#e7eef0" stroke-width="5" opacity=".95"/>
+  <path d="M0 706 C162 662 332 710 528 646 C728 580 873 681 1069 610 C1256 542 1406 608 1600 552" fill="none" stroke="#c59042" stroke-width="12" opacity=".92"/>
+  <path d="M0 764 C196 698 349 772 540 704 C748 630 922 744 1114 664 C1310 582 1442 662 1600 604" fill="none" stroke="#f2d28a" stroke-width="6" opacity=".78"/>
+  <path d="M0 816 C168 760 332 832 536 758 C762 676 932 806 1140 718 C1320 642 1458 718 1600 674" fill="none" stroke="#8a6a47" stroke-width="11" opacity=".8"/>
+  <g fill="none" stroke="#8ed8f1" stroke-width="1.4" opacity=".68">
+    <path d="M130 360 L352 276 L540 420 L736 354 L970 444 L1190 314 L1436 386"/>
+    <path d="M194 520 L390 456 L642 548 L832 470 L1030 610 L1264 516 L1490 590"/>
+    <path d="M736 354 L832 470 L970 444 L1030 610"/>
+    <path d="M1190 314 L1264 516 L1436 386 L1490 590"/>
+  </g>
+  <g fill="#eafaff" filter="url(#glow)">
+    <circle cx="130" cy="360" r="5"/>
+    <circle cx="352" cy="276" r="5"/>
+    <circle cx="540" cy="420" r="5"/>
+    <circle cx="736" cy="354" r="5"/>
+    <circle cx="970" cy="444" r="5"/>
+    <circle cx="1190" cy="314" r="5"/>
+    <circle cx="1436" cy="386" r="5"/>
+    <circle cx="832" cy="470" r="5"/>
+    <circle cx="1030" cy="610" r="5"/>
+    <circle cx="1264" cy="516" r="5"/>
+    <circle cx="1490" cy="590" r="5"/>
+  </g>
+  <g opacity=".66">
+    <path d="M828 794 C910 712 1000 746 1066 694 C1150 628 1244 664 1318 596 C1398 524 1480 568 1560 500" fill="none" stroke="#8ed8f1" stroke-width="2"/>
+    <path d="M820 838 C898 774 990 804 1076 746 C1162 686 1240 712 1330 650 C1412 594 1488 622 1582 566" fill="none" stroke="#8ed8f1" stroke-width="2"/>
+  </g>
+  <g fill="url(#earth)" opacity=".75">
+    <rect x="1080" y="724" width="10" height="82" rx="3"/>
+    <rect x="1112" y="676" width="10" height="130" rx="3"/>
+    <rect x="1144" y="704" width="10" height="102" rx="3"/>
+    <rect x="1176" y="640" width="10" height="166" rx="3"/>
+    <rect x="1208" y="690" width="10" height="116" rx="3"/>
+    <rect x="1240" y="654" width="10" height="152" rx="3"/>
+  </g>
+</svg>

@@ -234,6 +234,29 @@ button {
   box-shadow: var(--shadow);
 }
 
+.visual-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1.05fr);
+  gap: 28px;
+  align-items: center;
+}
+
+.hero-media {
+  overflow: hidden;
+  border: 1px solid rgba(31, 111, 101, 0.22);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: 0 16px 38px rgba(20, 48, 55, 0.16);
+}
+
+.hero-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
 .hero h2,
 .page-hero h1 {
   max-width: 820px;
@@ -600,22 +623,6 @@ dd {
   color: var(--muted);
 }
 
-.code-panel {
-  overflow-x: auto;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: #17252a;
-  box-shadow: var(--shadow);
-}
-
-.code-panel pre {
-  margin: 0;
-  padding: 20px;
-  color: #eff7f5;
-  font-family: Consolas, "Courier New", monospace;
-  line-height: 1.65;
-}
-
 .article {
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -689,6 +696,7 @@ dd {
   }
 
   .layout,
+  .visual-hero,
   .split-section,
   .detail-grid,
   .project-grid,
