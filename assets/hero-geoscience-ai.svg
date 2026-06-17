@@ -1,75 +1,87 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="人工智能与地学智能应用主题图">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="AI 与地学智能应用示意图">
   <defs>
-    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0" stop-color="#dff3fb"/>
-      <stop offset="0.5" stop-color="#f7fbfc"/>
-      <stop offset="1" stop-color="#0f3844"/>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#eef8f7"/>
+      <stop offset="1" stop-color="#dcecf0"/>
     </linearGradient>
-    <linearGradient id="earth" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0" stop-color="#7b6d57"/>
-      <stop offset="0.45" stop-color="#c18b3b"/>
-      <stop offset="1" stop-color="#174f59"/>
+    <linearGradient id="map" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#8cc9c7"/>
+      <stop offset=".55" stop-color="#4f9aa2"/>
+      <stop offset="1" stop-color="#1e5464"/>
     </linearGradient>
-    <linearGradient id="map" x1="0" x2="1" y1="0" y2="0">
-      <stop offset="0" stop-color="#2f8b89" stop-opacity=".45"/>
-      <stop offset="1" stop-color="#0f2f45" stop-opacity=".92"/>
+    <linearGradient id="section" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#173946"/>
+      <stop offset=".55" stop-color="#245f67"/>
+      <stop offset="1" stop-color="#14303a"/>
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#173946" flood-opacity=".16"/>
     </filter>
   </defs>
-  <rect width="1600" height="900" fill="url(#sky)"/>
-  <circle cx="138" cy="112" r="170" fill="#ffffff" opacity=".55"/>
-  <path d="M0 472 L118 358 L223 433 L361 252 L522 438 L664 316 L810 472 Z" fill="#8fa2ad"/>
-  <path d="M170 432 L361 252 L522 438 L450 421 L361 315 L282 448 Z" fill="#eef5f7" opacity=".86"/>
-  <path d="M630 428 C806 272 1086 166 1600 132 L1600 900 L630 900 Z" fill="url(#map)" opacity=".85"/>
-  <g opacity=".42" stroke="#cce9ef" stroke-width="1">
-    <path d="M754 386 C904 328 1082 292 1600 226"/>
-    <path d="M716 466 C952 408 1124 380 1600 322"/>
-    <path d="M682 558 C962 508 1184 476 1600 438"/>
-    <path d="M834 288 L1030 690"/>
-    <path d="M994 246 L1230 724"/>
-    <path d="M1186 206 L1454 808"/>
-    <path d="M1366 178 L1600 612"/>
+
+  <rect width="1600" height="900" rx="34" fill="url(#bg)"/>
+
+  <g opacity=".42" stroke="#b6d5d7" stroke-width="1">
+    <path d="M0 120H1600M0 240H1600M0 360H1600M0 480H1600M0 600H1600M0 720H1600"/>
+    <path d="M160 0V900M320 0V900M480 0V900M640 0V900M800 0V900M960 0V900M1120 0V900M1280 0V900M1440 0V900"/>
   </g>
-  <path d="M0 628 C186 548 320 603 505 535 C690 467 804 541 1002 492 C1190 446 1350 475 1600 410 L1600 900 L0 900 Z" fill="#173946" opacity=".92"/>
-  <path d="M0 655 C178 598 330 648 512 583 C716 510 875 612 1060 546 C1260 476 1397 548 1600 486" fill="none" stroke="#e7eef0" stroke-width="5" opacity=".95"/>
-  <path d="M0 706 C162 662 332 710 528 646 C728 580 873 681 1069 610 C1256 542 1406 608 1600 552" fill="none" stroke="#c59042" stroke-width="12" opacity=".92"/>
-  <path d="M0 764 C196 698 349 772 540 704 C748 630 922 744 1114 664 C1310 582 1442 662 1600 604" fill="none" stroke="#f2d28a" stroke-width="6" opacity=".78"/>
-  <path d="M0 816 C168 760 332 832 536 758 C762 676 932 806 1140 718 C1320 642 1458 718 1600 674" fill="none" stroke="#8a6a47" stroke-width="11" opacity=".8"/>
-  <g fill="none" stroke="#8ed8f1" stroke-width="1.4" opacity=".68">
-    <path d="M130 360 L352 276 L540 420 L736 354 L970 444 L1190 314 L1436 386"/>
-    <path d="M194 520 L390 456 L642 548 L832 470 L1030 610 L1264 516 L1490 590"/>
-    <path d="M736 354 L832 470 L970 444 L1030 610"/>
-    <path d="M1190 314 L1264 516 L1436 386 L1490 590"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="130" y="120" width="570" height="360" rx="22" fill="#ffffff" opacity=".92"/>
+    <rect x="170" y="160" width="490" height="280" rx="14" fill="url(#map)"/>
+    <path d="M180 370C260 320 330 350 420 286C506 224 590 252 656 198" fill="none" stroke="#e7fbff" stroke-width="7" opacity=".82"/>
+    <path d="M170 276C252 238 350 270 430 222C512 174 590 184 660 146" fill="none" stroke="#f4fbfb" stroke-width="3" opacity=".6"/>
+    <path d="M170 410L660 188V440H170Z" fill="#143d48" opacity=".2"/>
+    <g fill="#f8fbfc" opacity=".78">
+      <circle cx="250" cy="250" r="8"/>
+      <circle cx="394" cy="306" r="8"/>
+      <circle cx="536" cy="224" r="8"/>
+      <circle cx="610" cy="348" r="8"/>
+    </g>
+    <g stroke="#f8fbfc" stroke-width="2.5" opacity=".55">
+      <path d="M250 250L394 306L536 224L610 348"/>
+      <path d="M394 306L610 348"/>
+    </g>
   </g>
-  <g fill="#eafaff" filter="url(#glow)">
-    <circle cx="130" cy="360" r="5"/>
-    <circle cx="352" cy="276" r="5"/>
-    <circle cx="540" cy="420" r="5"/>
-    <circle cx="736" cy="354" r="5"/>
-    <circle cx="970" cy="444" r="5"/>
-    <circle cx="1190" cy="314" r="5"/>
-    <circle cx="1436" cy="386" r="5"/>
-    <circle cx="832" cy="470" r="5"/>
-    <circle cx="1030" cy="610" r="5"/>
-    <circle cx="1264" cy="516" r="5"/>
-    <circle cx="1490" cy="590" r="5"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="820" y="120" width="650" height="360" rx="22" fill="#ffffff" opacity=".92"/>
+    <rect x="860" y="170" width="570" height="250" rx="14" fill="url(#section)"/>
+    <path d="M860 246C965 214 1042 248 1142 214C1244 178 1320 216 1430 170" fill="none" stroke="#e8f4f2" stroke-width="10" opacity=".9"/>
+    <path d="M860 294C978 254 1062 294 1164 258C1266 222 1340 258 1430 226" fill="none" stroke="#c9e1dc" stroke-width="6" opacity=".86"/>
+    <path d="M860 340C982 304 1074 344 1170 306C1276 264 1352 310 1430 274" fill="none" stroke="#b8842f" stroke-width="7" opacity=".9"/>
+    <path d="M860 386C982 350 1080 386 1188 350C1292 316 1368 354 1430 322" fill="none" stroke="#efe1bf" stroke-width="4" opacity=".8"/>
+    <g stroke="#b8842f" stroke-width="5" opacity=".78">
+      <path d="M1188 340V420"/>
+      <path d="M1222 322V420"/>
+      <path d="M1256 334V420"/>
+      <path d="M1290 306V420"/>
+    </g>
   </g>
-  <g opacity=".66">
-    <path d="M828 794 C910 712 1000 746 1066 694 C1150 628 1244 664 1318 596 C1398 524 1480 568 1560 500" fill="none" stroke="#8ed8f1" stroke-width="2"/>
-    <path d="M820 838 C898 774 990 804 1076 746 C1162 686 1240 712 1330 650 C1412 594 1488 622 1582 566" fill="none" stroke="#8ed8f1" stroke-width="2"/>
+
+  <g>
+    <rect x="520" y="552" width="560" height="170" rx="26" fill="#ffffff" opacity=".94" filter="url(#softShadow)"/>
+    <text x="800" y="622" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="800" fill="#173946">AI Model</text>
+    <text x="800" y="666" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#607174">Remote sensing · Geology · Prediction</text>
+    <g fill="#1f6f65">
+      <circle cx="610" cy="636" r="13"/>
+      <circle cx="700" cy="596" r="13"/>
+      <circle cx="700" cy="680" r="13"/>
+      <circle cx="900" cy="596" r="13"/>
+      <circle cx="900" cy="680" r="13"/>
+      <circle cx="990" cy="636" r="13"/>
+    </g>
+    <g stroke="#7fbfca" stroke-width="3" opacity=".8">
+      <path d="M623 636L687 596M623 636L687 680"/>
+      <path d="M713 596L887 596M713 596L887 680M713 680L887 596M713 680L887 680"/>
+      <path d="M913 596L977 636M913 680L977 636"/>
+    </g>
   </g>
-  <g fill="url(#earth)" opacity=".75">
-    <rect x="1080" y="724" width="10" height="82" rx="3"/>
-    <rect x="1112" y="676" width="10" height="130" rx="3"/>
-    <rect x="1144" y="704" width="10" height="102" rx="3"/>
-    <rect x="1176" y="640" width="10" height="166" rx="3"/>
-    <rect x="1208" y="690" width="10" height="116" rx="3"/>
-    <rect x="1240" y="654" width="10" height="152" rx="3"/>
+
+  <g fill="none" stroke="#2f7fb8" stroke-width="3" opacity=".42">
+    <path d="M700 300C760 330 790 430 800 552"/>
+    <path d="M900 300C840 340 810 430 800 552"/>
+    <path d="M800 722C770 770 648 788 420 742"/>
+    <path d="M800 722C860 770 1038 790 1260 742"/>
   </g>
 </svg>
