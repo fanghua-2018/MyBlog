@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>发布流程 | AI + 地学智能应用</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html"><span class="brand-mark">AI</span><span>地学智能应用</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">菜单</button>
+      <nav class="site-nav" id="site-nav">
+        <a href="index.html">首页</a>
+        <a href="research.html">研究方向</a>
+        <a href="projects.html">项目与竞赛</a>
+        <a href="opportunities.html">学生实践</a>
+        <a href="skills.html">技能路线</a>
+        <a href="notes.html">博客笔记</a>
+        <a class="active" href="publish.html">发布流程</a>
+        <a href="about.html">关于我</a>
+      </nav>
+    </header>
+    <main class="page">
+      <section class="page-hero">
+        <p class="eyebrow">Publishing Workflow</p>
+        <h1>博客管理与发布流程</h1>
+        <p>本站没有网页登录后台。访客端由 GitHub Pages 托管，站长管理端就是 GitHub 仓库的编辑、提交和发布流程。</p>
+        <div class="hero-actions">
+          <a class="primary-link" href="https://github.com/fanghua-2018" target="_blank" rel="noreferrer">进入 GitHub 主页</a>
+          <button class="share-button" type="button" data-share-url="https://fanghua-2018.github.io/MyBlog/publish.html" data-share-title="博客管理与发布流程">复制本页链接</button>
+        </div>
+      </section>
+
+      <section class="section split-section">
+        <div>
+          <div class="section-heading"><span>Roles</span><h2>权限边界</h2></div>
+          <div class="card-grid">
+            <article class="card">
+              <h3>访客端</h3>
+              <p>学生、同行和合作方只能浏览公开页面、复制链接、查看联系方式和进入 GitHub 主页。</p>
+            </article>
+            <article class="card">
+              <h3>站长端</h3>
+              <p>李帅兵本人通过 GitHub 仓库修改 HTML、CSS、文章和项目内容，仓库权限决定谁能发布。</p>
+            </article>
+          </div>
+        </div>
+        <aside class="notice-panel">
+          <h3>为什么不做网页登录后台</h3>
+          <p>GitHub Pages 是静态托管服务，没有数据库和服务端登录能力。第一版采用 GitHub 仓库管理，稳定、透明、成本低。</p>
+        </aside>
+      </section>
+
+      <section class="section">
+        <div class="section-heading"><span>Steps</span><h2>新增博客文章步骤</h2></div>
+        <div class="roadmap">
+          <article class="roadmap-item"><span>01</span><div><h2>复制文章模板</h2><p>在 `posts/` 目录中复制一篇已有文章，改成新的英文文件名，例如 `remote-sensing-intro.html`。</p></div></article>
+          <article class="roadmap-item"><span>02</span><div><h2>修改文章内容</h2><p>更新标题、日期、分类、正文、返回链接和复制链接按钮中的文章地址。</p></div></article>
+          <article class="roadmap-item"><span>03</span><div><h2>更新博客列表</h2><p>在 `notes.html` 的文章列表中新增一条记录，包含标题、日期、分类、摘要和阅读全文链接。</p></div></article>
+          <article class="roadmap-item"><span>04</span><div><h2>提交到 GitHub</h2><p>将修改后的文件提交到 GitHub 仓库。GitHub Pages 会根据仓库设置自动发布。</p></div></article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading"><span>Template</span><h2>文章信息模板</h2></div>
+        <div class="code-panel">
+          <pre><code>标题：
+日期：
+分类：
+摘要：
+正文：
+相关项目：
+联系方式：shuaibing@sasu.edu.cn</code></pre>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><span>© 2026 李帅兵</span><span>Built for GitHub Pages</span></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
